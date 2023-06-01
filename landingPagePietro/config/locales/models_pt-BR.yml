@@ -1,0 +1,17 @@
+"pt-BR":
+  activerecord:
+    models:
+      service: serviço
+    attributes:
+      service:
+        title: "nome"
+        value: "valor"
+        description: "descrição"
+    errors:
+      models:
+        service:
+          attributes:
+            value:
+              blank: "vazio"
+              not_a_number: "não é um número"
+# pt-BR.activerecord.errors.models.service.attributes.value.blank

@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+<%= render @service %>
+<div>
+  <%= link_to "Editar este serviço", edit_service_path(@service), class: "btn btn-secondary" %>
+  <%= link_to "Voltar para serviços", services_path, class: "btn btn-primary" %>
+  <%= button_to "Deletar este serviço", @service, class: 'btn btn-danger', method: :delete, data: { turbo_confirm: "Tem certeza que deseja deletar este serviço?"} %>
+</div>
