@@ -145,7 +145,7 @@ GEM
       racc (~> 1.4)
     pagy (6.0.3)
     pg (1.4.6)
-    popper_js (2.11.6)
+    popper_js (2.11.7)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -244,7 +244,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bootstrap (~> 5.2, >= 5.2.3)
+  bootstrap
   capybara
   debug
   image_processing (~> 1.2)
