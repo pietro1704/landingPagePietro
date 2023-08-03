@@ -1,0 +1,1351 @@
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:24:11 -0300
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:26:28 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: db/development.pg. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-06-07 16:26:45 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "db/development"."pg" ENCODING = 'utf8'[0m
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "."
+LINE 1: CREATE DATABASE "db/development"."pg" ENCODING = 'utf8'
+                                        ^
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql/database_statements.rb:48:in `exec'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql/database_statements.rb:48:in `block (2 levels) in execute'
+activesupport (7.0.4.3) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (7.0.4.3) lib/active_support/dependencies/interlock.rb:41:in `permit_concurrent_loads'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql/database_statements.rb:47:in `block in execute'
+activesupport (7.0.4.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (7.0.4.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (7.0.4.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (7.0.4.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract_adapter.rb:765:in `block in log'
+activesupport (7.0.4.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract_adapter.rb:756:in `log'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql/database_statements.rb:46:in `execute'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:46:in `create_database'
+activerecord (7.0.4.3) lib/active_record/tasks/postgresql_database_tasks.rb:26:in `create'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:122:in `create'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:184:in `block in create_current'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:557:in `block (2 levels) in each_current_configuration'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:554:in `each'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:554:in `block in each_current_configuration'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:553:in `each'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:553:in `each_current_configuration'
+activerecord (7.0.4.3) lib/active_record/tasks/database_tasks.rb:184:in `create_current'
+activerecord (7.0.4.3) lib/active_record/errors.rb:242:in `block in <class:NoDatabaseError>'
+activesupport (7.0.4.3) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (241.9ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (93.2ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateServices (20230319233629)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "services" ("id" bigserial primary key, "title" character varying, "value" float, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233629"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20230319233635)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233635"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActionTextTables (20230319233636)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" bigserial primary key, "name" character varying NOT NULL, "body" text, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233636"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-07 19:27:26.021634"], ["updated_at", "2023-06-07 19:27:26.021634"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:27:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 490)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3499)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:28:17 -0300
+  
+ActionController::RoutingError (uninitialized constant ArticlesController):
+  
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:28:45 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:29:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 1806.9ms | Allocations: 53618)
+Completed 500 Internal Server Error in 1816ms (ActiveRecord: 0.0ms | Allocations: 56746)
+
+
+  
+ActionView::Template::Error (Multiple files with the same output path cannot be linked ("application.css")
+In "/Users/pietropugliesi/Developer/landingPagePietro/landingPagePietro/app/assets/config/manifest.js" these files were linked:
+  - /Users/pietropugliesi/Developer/landingPagePietro/landingPagePietro/app/assets/stylesheets/application.css
+  - /Users/pietropugliesi/Developer/landingPagePietro/landingPagePietro/app/assets/stylesheets/application.scss
+):
+  
+sprockets (4.2.0) lib/sprockets/base.rb:100:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:30:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 181.7ms | Allocations: 55797)
+Completed 200 OK in 190ms (Views: 185.0ms | ActiveRecord: 0.0ms | Allocations: 58982)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:32:05 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+  Rendered shared/_header.html.erb (Duration: 18.0ms | Allocations: 9717)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 16616)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 17363)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `services_path' for #<ActionView::Base:0x0000000000b770>):
+    10:       </button>
+    11:       <div class="collapse navbar-collapse" id="navbarCollapse">
+    12:         <ul class="navbar-nav me-auto ">
+    13:           <li><%= link_to "Serviços", services_path, class: 'nav-link' %></li>
+    14:           <li><%= link_to "Sobre Mim", about_path , class: 'nav-link' %></li>
+    15:         </ul>
+    16:       </div>
+  
+app/views/shared/_header.html.erb:13
+app/views/layouts/application.html.erb:13
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:34:25 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 18502)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 19001)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000f8c0>):
+    11:       <div class="collapse navbar-collapse" id="navbarCollapse">
+    12:         <ul class="navbar-nav me-auto ">
+    13:           <li><%= link_to "Serviços", services_path, class: 'nav-link' %></li>
+    14:           <li><%= link_to "Sobre Mim", about_path , class: 'nav-link' %></li>
+    15:         </ul>
+    16:       </div>
+    17:     </ul>
+  
+app/views/shared/_header.html.erb:14
+app/views/layouts/application.html.erb:13
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:35:31 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:36:34 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:36:37 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 1129)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 18401)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 18897)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000011008>):
+    11:       <div class="collapse navbar-collapse" id="navbarCollapse">
+    12:         <ul class="navbar-nav me-auto ">
+    13:           <li><%= link_to "Serviços", services_path, class: 'nav-link' %></li>
+    14:           <li><%= link_to "Sobre Mim", about_path , class: 'nav-link' %></li>
+    15:         </ul>
+    16:       </div>
+    17:     </ul>
+  
+app/views/shared/_header.html.erb:14
+app/views/layouts/application.html.erb:13
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:36:54 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 1154)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7637)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 7870)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x000000000112d8>):
+    11:       <div class="collapse navbar-collapse" id="navbarCollapse">
+    12:         <ul class="navbar-nav me-auto ">
+    13:           <li><%= link_to "Serviços", services_path, class: 'nav-link' %></li>
+    14:           <li><%= link_to "Sobre Mim", about_path , class: 'nav-link' %></li>
+    15:         </ul>
+    16:       </div>
+    17:     </ul>
+  
+app/views/shared/_header.html.erb:14
+app/views/layouts/application.html.erb:13
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:36:56 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:38:28 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:07 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 18001)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 18827)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:09 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6487)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6743)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:10 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1987)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 8395)
+Completed 200 OK in 35ms (Views: 11.2ms | ActiveRecord: 3.4ms | Allocations: 12975)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:16 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 843)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 7150)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.7ms | Allocations: 8077)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:17 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 822)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 7239)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.6ms | Allocations: 8168)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:17 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 819)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7127)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.8ms | Allocations: 8044)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:18 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 810)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7117)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 8036)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:18 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 837)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7144)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.7ms | Allocations: 8061)
+
+
+Started GET "/about" for 127.0.0.1 at 2023-06-07 16:39:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/services" for 127.0.0.1 at 2023-06-07 16:39:21 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 838)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 7256)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.7ms | Allocations: 8181)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:28 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6493)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 6752)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:28 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6502)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6758)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:29 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6496)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6754)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:29 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6487)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6743)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:39:42 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 12)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 8412)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 8683)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:41:12 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6576)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6834)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:55:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 441)
+  Rendered layout layouts/application.html.erb (Duration: 179.9ms | Allocations: 21464)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms | Allocations: 26323)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap.
+        on line 15:1 of app/assets/stylesheets/application.scss
+>> @import "bootstrap";
+
+   ^
+):
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:15
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:56:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 443)
+  Rendered layout layouts/application.html.erb (Duration: 7040.4ms | Allocations: 156947)
+Completed 200 OK in 7049ms (Views: 7043.3ms | ActiveRecord: 0.0ms | Allocations: 160128)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:56:56 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 6417)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 6762)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 16:58:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 130.9ms | Allocations: 47363)
+Completed 200 OK in 140ms (Views: 134.0ms | ActiveRecord: 0.0ms | Allocations: 50544)
+
+
+Started GET "/" for ::1 at 2023-06-07 16:58:48 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 6441)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 6705)
+
+
+Started GET "/" for ::1 at 2023-06-07 16:59:59 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 111)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7134)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 7877)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 17:00:41 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6251)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 6513)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:15:44 -0300
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/tmp/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:17:57 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: db/development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (309.0ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateServices (20230319233629)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "services" ("id" bigserial primary key, "title" character varying, "value" float, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233629"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20230319233635)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233635"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActionTextTables (20230319233636)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" bigserial primary key, "name" character varying NOT NULL, "body" text, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230319233636"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-08 16:18:24.300298"], ["updated_at", "2023-06-08 16:18:24.300298"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:18:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 287.4ms | Allocations: 53794)
+Completed 200 OK in 301ms (Views: 291.1ms | ActiveRecord: 0.0ms | Allocations: 56974)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:18:49 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 6344)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6691)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:20:30 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 6137)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 6402)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:51:30 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 91.2ms | Allocations: 34438)
+Completed 200 OK in 106ms (Views: 97.2ms | ActiveRecord: 0.0ms | Allocations: 37619)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:53:22 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 351)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 7433)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 8179)
+
+
+Started GET "/about" for 127.0.0.1 at 2023-06-08 15:53:50 -0300
+Processing by AboutController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 108)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6647)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 7293)
+
+
+Started GET "/services" for 127.0.0.1 at 2023-06-08 15:53:51 -0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Count (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC) subquery_for_count[0m
+  ↳ app/controllers/services_controller.rb:8:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  [1m[36mService Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "services".* FROM "services" ORDER BY "services"."created_at" DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/services/index.html.erb:4
+  Rendered services/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1990)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8294)
+Completed 200 OK in 49ms (Views: 14.5ms | ActiveRecord: 6.5ms | Allocations: 13369)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:53:53 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6403)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 6662)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:54:01 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 7756)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 8110)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:55:25 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2365)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3107)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:55:39 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 7053)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 7795)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 15:56:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 150.0ms | Allocations: 39701)
+Completed 200 OK in 160ms (Views: 153.5ms | ActiveRecord: 0.0ms | Allocations: 42882)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:04:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 109.4ms | Allocations: 39981)
+Completed 200 OK in 125ms (Views: 114.9ms | ActiveRecord: 0.0ms | Allocations: 43163)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:06:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 438)
+  Rendered layout layouts/application.html.erb (Duration: 211.2ms | Allocations: 54409)
+Completed 200 OK in 226ms (Views: 216.8ms | ActiveRecord: 0.0ms | Allocations: 57589)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:10:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 141.5ms | Allocations: 40220)
+Completed 200 OK in 155ms (Views: 146.8ms | ActiveRecord: 0.0ms | Allocations: 43401)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:11:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 135.0ms | Allocations: 39050)
+Completed 200 OK in 144ms (Views: 138.0ms | ActiveRecord: 0.0ms | Allocations: 42231)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:14:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 438)
+  Rendered layout layouts/application.html.erb (Duration: 250.1ms | Allocations: 55373)
+Completed 200 OK in 260ms (Views: 253.2ms | ActiveRecord: 0.0ms | Allocations: 58553)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:18:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 119.2ms | Allocations: 41252)
+Completed 200 OK in 131ms (Views: 123.3ms | ActiveRecord: 0.0ms | Allocations: 44433)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:22:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 144.9ms | Allocations: 45981)
+Completed 200 OK in 155ms (Views: 149.1ms | ActiveRecord: 0.0ms | Allocations: 49162)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:22:23 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6716)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6980)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:10 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 109)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2253)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2994)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:11 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1572)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1833)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:16 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2502)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3246)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:19 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2241)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 2986)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:24 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:28 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4979.4ms | Allocations: 41871)
+Completed 500 Internal Server Error in 4982ms (ActiveRecord: 0.0ms | Allocations: 42508)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 9122.7ms | Allocations: 81277)
+  
+ActionView::Template::Error ():
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%# <%= csrf_meta_tags %> %>
+     7:     <%# <%= csp_meta_tag %> %>
+     8:     <%= stylesheet_link_tag "application" %>
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+  
+(execjs):1
+app/views/layouts/application.html.erb:8
+Completed 500 Internal Server Error in 9131ms (ActiveRecord: 0.0ms | Allocations: 82995)
+
+
+  
+ActionView::Template::Error ():
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%# <%= csrf_meta_tags %> %>
+     7:     <%# <%= csp_meta_tag %> %>
+     8:     <%= stylesheet_link_tag "application" %>
+     9:     <%= javascript_importmap_tags %>
+    10:   </head>
+    11: 
+  
+(execjs):1
+app/views/layouts/application.html.erb:8
+
+NameError: constant WebConsole::SourceLocation not defined
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:40:in `call_app'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `block in call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/rack/logger.rb:25:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/method_override.rb:24:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/runtime.rb:22:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/activesupport-7.0.4.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/rack-2.2.6.4/lib/rack/sendfile.rb:110:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/engine.rb:530:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /Users/pietropugliesi/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:26:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 3.4ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1705.1ms | Allocations: 63233)
+Completed 200 OK in 1716ms (Views: 1708.6ms | ActiveRecord: 0.0ms | Allocations: 66413)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:27:10 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 6793)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 7538)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:27:26 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6792)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 7537)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:31:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 142.0ms | Allocations: 45448)
+Completed 200 OK in 155ms (Views: 146.5ms | ActiveRecord: 0.0ms | Allocations: 48629)
+
+
+Started GET "/" for ::1 at 2023-06-08 16:31:56 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6141)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 6403)
+
+
+Started GET "/" for ::1 at 2023-06-08 16:32:43 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 135.9ms | Allocations: 22168)
+Completed 200 OK in 137ms (Views: 136.3ms | ActiveRecord: 0.0ms | Allocations: 22428)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:33:02 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6141)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6401)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:33:11 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 6238)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 6581)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:34:39 -0300
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:34:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 307)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 299)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 510)
+  Rendered layout layouts/application.html.erb (Duration: 255.6ms | Allocations: 107215)
+Completed 200 OK in 269ms (Views: 260.4ms | ActiveRecord: 0.0ms | Allocations: 110564)
+
+
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 259.2ms | Allocations: 109025)
+Completed 200 OK in 274ms (Views: 264.0ms | ActiveRecord: 0.0ms | Allocations: 112524)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:34:46 -0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6141)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 6485)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:35:39 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 15763)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms | Allocations: 16025)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:36:54 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 14631)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 14889)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:41:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered shared/_header.html.erb (Duration: 3.0ms | Allocations: 435)
+  Rendered layout layouts/application.html.erb (Duration: 219.7ms | Allocations: 67207)
+Completed 200 OK in 228ms (Views: 222.6ms | ActiveRecord: 0.0ms | Allocations: 70388)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-08 16:45:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 309)
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 435)
+  Rendered layout layouts/application.html.erb (Duration: 247.5ms | Allocations: 67407)
+Completed 200 OK in 255ms (Views: 250.3ms | ActiveRecord: 0.0ms | Allocations: 70588)
+
+
+Started GET "/" for ::1 at 2023-06-08 16:52:09 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 6208)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 6470)
+
+
