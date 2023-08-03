@@ -3,3 +3,10 @@
 
 # Vscode
 **/.vscode
+
+# Log folder
+log/
+
+# tmp folder
+tmp/
+
