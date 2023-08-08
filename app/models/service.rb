@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Service < ApplicationRecord
   validates :title, :value, presence: true
   validates :value, numericality: { only_float: true }
