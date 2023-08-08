@@ -8,16 +8,16 @@ source 'https://rubygems.org'
 ruby '~> 3.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.4.3'
+gem 'rails'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
 # Use pg as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 5.0'
+gem 'puma'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
@@ -56,7 +56,7 @@ gem 'bootstrap'
 gem 'image_processing', '~> 1.2'
 
 # Add Pagination
-gem 'pagy', '~> 6.0'
+gem 'pagy', '~> 6'
 
 gem 'ransack', '~> 4.0'
 
