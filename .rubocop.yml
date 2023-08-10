@@ -6,4 +6,9 @@ Style/Documentation:
 AllCops:
   NewCops: enable
   Exclude:
-    - 'db'
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - '.git/**/*'
+    - 'bin/*'
+    - 'db/**/*'
