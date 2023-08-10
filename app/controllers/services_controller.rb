@@ -24,7 +24,6 @@ class ServicesController < ApplicationController
   # POST /services or /services.json
   def create
     @service = Service.new(service_params)
-
     respond_to do |format|
       if @service.save
         format.html { redirect_to service_url(@service), notice: 'Serviço criado com sucesso!' }
@@ -51,7 +50,7 @@ class ServicesController < ApplicationController
 
   # DELETE /services/1 or /services/1.json
   def destroy
-    @service.destroy
+    @service.destroy(service_params)
     respond_to do |format|
       format.html { redirect_to services_url, notice: 'Serviço deletado com sucesso!' }
       format.json { head :no_content }
@@ -60,7 +59,6 @@ class ServicesController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_service
     @service = Service.find(params[:id])
   rescue ActiveRecord::RecordNotFound
