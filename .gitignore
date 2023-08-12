@@ -3,6 +3,7 @@
 
 # Vscode
 **/.vscode
+*.code-workspace
 
 # Log folder
 log/
