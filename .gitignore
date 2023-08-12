@@ -10,3 +10,6 @@ log/
 # tmp folder
 tmp/
 
+# Database files
+db/development*
+db/test*
