@@ -1,5 +1,5 @@
 "pt-BR":
-  services:
-    created_successfully: "Serviço criado com sucesso"
-    updated_successfully: "Serviço atualizado com sucesso"
-    deleted_successfully: "Serviço excluído com sucesso"
+  post:
+    created: "Post criado com sucesso"
+    updated: "Post atualizado com sucesso"
+    destroyed: "Post excluído com sucesso"
