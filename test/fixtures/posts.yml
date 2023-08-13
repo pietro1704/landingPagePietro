@@ -2,10 +2,6 @@
 
 one:
   title: MyString
-  value: 1.5
-  description: MyText
 
 two:
   title: MyString
-  value: 1.5
-  description: MyText

@@ -291,7 +291,7 @@ DEPENDENCIES
   capybara
   debug
   gem-ctags
-  image_processing (~> 1.2)
+  image_processing
   importmap-rails
   jbuilder
   pagy (~> 6)

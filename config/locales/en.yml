@@ -1,5 +1,5 @@
 en:
-  services:
-    created_successfully: "Service created successfully"
-    updated_successfully: "Service updated successfully"
-    deleted_successfully: "Service deleted successfully"
+  post:
+    created: "Post created successfully"
+    updated: "Post updated successfully"
+    destroyed: "Post deleted successfully"
