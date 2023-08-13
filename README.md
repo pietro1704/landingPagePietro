@@ -1,1 +1,1 @@
-[![Ruby on Rails CI](https://github.com/pietro1704/landingPagePietro/actions/workflows/rubyonrails.yml/badge.svg?event=push)](https://github.com/pietro1704/landingPagePietro/actions/workflows/rubyonrails.yml)
+[![Ruby on Rails CI](https://github.com/pietro1704/landingPagePietro/actions/workflows/rubyonrailsci.yml/badge.svg?event=push)](https://github.com/pietro1704/landingPagePietro/actions/workflows/rubyonrailsci.yml)
