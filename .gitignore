@@ -17,3 +17,9 @@ db/test*
 
 # storage files
 storage/
+
+# Secrets
+config/master.key
+
+# Public compiled assets
+public/assets/
