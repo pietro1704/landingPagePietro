@@ -3,12 +3,14 @@ require:
   - rubocop-capybara
 Style/Documentation:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
 AllCops:
   NewCops: enable
   Exclude:
-    - 'vendor/**/*'
-    - 'spec/fixtures/**/*'
-    - 'tmp/**/*'
-    - '.git/**/*'
-    - 'bin/*'
-    - 'db/**/*'
+    - "vendor/**/*"
+    - "spec/fixtures/**/*"
+    - "tmp/**/*"
+    - ".git/**/*"
+    - "bin/*"
+    - "db/**/*"
