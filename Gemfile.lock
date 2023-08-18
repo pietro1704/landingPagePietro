@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/puma/puma.git
+  revision: 99da3a9866fb17019136c654f43a7b4c2ea4139e
+  specs:
+    puma (6.3.1)
+      nio4r (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -158,8 +165,6 @@ GEM
     pg (1.5.3)
     popper_js (2.11.8)
     public_suffix (5.0.3)
-    puma (6.3.0)
-      nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
     rack-test (2.1.0)
@@ -296,7 +301,7 @@ DEPENDENCIES
   jbuilder
   pagy (~> 6)
   pg
-  puma
+  puma!
   rails (~> 7.0.6)
   ransack (~> 4.0)
   rubocop
