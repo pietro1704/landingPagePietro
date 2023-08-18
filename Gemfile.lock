@@ -303,7 +303,7 @@ DEPENDENCIES
   rubocop-capybara
   rubocop-rails
   ruby_audit
-  sassc-rails
+  sassc
   selenium-webdriver
   spring
   sprockets-rails
