@@ -1,24 +1,24 @@
 source 'https://rubygems.org'
 
 # Github gem source (latest)
-# git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '~> 3.2'
 
-# Bundle edge Rails instead:
-gem 'rails', '~>7.0.6'
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sprockets-rails'
-
-# Use pg as the database for Active Record
-gem 'pg'
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
+gem 'propshaft'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', git: 'https://github.com/puma/puma.git'
 
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem 'importmap-rails'
+# Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
+gem 'jsbundling-rails'
+
+# Bundle and process CSS [https://github.com/rails/cssbundling-rails]
+gem 'cssbundling-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
@@ -44,11 +44,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
-# Get bootstrap and precompile
-gem 'bootstrap'
-
-gem 'sassc-rails'
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing'
 
@@ -58,6 +53,11 @@ gem 'pagy', '~> 6'
 gem 'ransack', '~> 4.0'
 
 gem 'gem-ctags'
+
+group :production do
+  # Use pg as the database for Active Record
+  gem 'pg', '~> 1.1'
+end
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -84,7 +84,7 @@ group :development do
   # gem 'rack-mini-profiler'
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  gem 'spring'
+  # gem 'spring'
 end
 
 group :test do
