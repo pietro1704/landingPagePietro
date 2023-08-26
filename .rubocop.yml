@@ -9,10 +9,10 @@ AllCops:
   NewCops: enable
   Exclude:
     - "config/initializers/**/*"
+    - "config/environments/**/*"
     - "vendor/**/*"
     - "spec/fixtures/**/*"
     - "tmp/**/*"
     - ".git/**/*"
     - "bin/*"
     - "db/**/*"
-

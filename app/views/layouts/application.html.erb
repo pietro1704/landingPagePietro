@@ -1,7 +1,8 @@
+<% @siteName = "Pietro Pugliesi - Desenvolvedor iOS e Ruby on Rails" %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LandingPagePietro</title>
+    <title><%=@siteName%></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,7 +13,14 @@
   <body>
     <%= render partial: 'shared/header' %>
     <div class="container-fluid">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
+      <div>
+        <% if user_signed_in? %>
+          <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger mt-2" %>
+        <% end %>
+      </div>
     </div>
   </body>
 </html>
