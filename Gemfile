@@ -52,8 +52,6 @@ gem 'pagy', '~> 6'
 
 gem 'ransack', '~> 4.0'
 
-gem 'gem-ctags'
-
 group :production do
   # Use pg as the database for Active Record
   gem 'pg', '~> 1.1'
@@ -65,18 +63,28 @@ group :development, :test do
 
   gem 'sqlite3'
 
+  # Debugger
+  # gem 'debase', '~> 0.2.4', require: false
+  # gem 'ruby-debug-ide', '~> 0.7.3', require: false
+
   # Security Tools
   gem 'brakeman'
   gem 'bundler-audit'
+  gem 'ruby_audit'
 
   # Linting
   gem 'rubocop'
   gem 'rubocop-capybara'
   gem 'rubocop-rails'
-  gem 'ruby_audit'
 end
 
 group :development do
+  gem 'devise', '~> 4.9', require: false
+  gem 'htmlbeautifier', '~> 1.4', require: false
+  gem 'solargraph', '~> 0.49.0', require: false
+
+  gem 'gem-ctags', require: false
+
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
@@ -92,4 +100,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+
+  gem 'simplecov', '~> 0.22.0', require: false
 end
