@@ -12,29 +12,29 @@ class PostsTest < ApplicationSystemTestCase
 
   test 'should create post' do
     visit posts_url
-    click_on 'New post'
+    click_button 'New post'
 
     fill_in 'Title', with: @post.title
-    click_on 'Create Post'
+    click_button 'Create Post'
 
     assert_text 'Post was successfully created'
-    click_on 'Back'
+    click_button 'Back'
   end
 
   test 'should update Post' do
     visit post_url(@post)
-    click_on 'Edit this post', match: :first
+    click_button 'Edit this post', match: :first
 
     fill_in 'Title', with: @post.title
-    click_on 'Update Post'
+    click_button 'Update Post'
 
     assert_text 'Post was successfully updated'
-    click_on 'Back'
+    click_button 'Back'
   end
 
   test 'should destroy Post' do
     visit post_url(@post)
-    click_on 'Destroy this post', match: :first
+    click_button 'Destroy this post', match: :first
 
     assert_text 'Post was successfully destroyed'
   end
