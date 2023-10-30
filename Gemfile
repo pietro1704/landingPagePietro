@@ -50,7 +50,7 @@ gem 'image_processing'
 # Add Pagination
 gem 'pagy', '~> 6'
 
-gem 'ransack', '~> 4.0'
+gem 'ransack', '~> 4.1'
 
 group :production do
   # Use pg as the database for Active Record
