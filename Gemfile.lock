@@ -246,7 +246,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (13.0.6)
     ransack (4.1.1)
       activerecord (>= 6.1.5)
       activesupport (>= 6.1.5)
@@ -382,7 +382,7 @@ DEPENDENCIES
   propshaft
   puma!
   rails (~> 7.1)
-  ransack (~> 4.0)
+  ransack (~> 4.1)
   rubocop
   rubocop-capybara
   rubocop-rails
