@@ -22,38 +22,6 @@
         "branches": {
         }
       },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/about_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/home_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/posts_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/models/post.rb": {
         "lines": [
           1,
@@ -156,6 +124,38 @@
         "branches": {
         }
       },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/about_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/home_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/home_controller.rb": {
         "lines": [
           1,
@@ -229,7 +229,7 @@
         }
       }
     },
-    "timestamp": 1693085949
+    "timestamp": 1708291228
   },
   "Unit Tests": {
     "coverage": {
