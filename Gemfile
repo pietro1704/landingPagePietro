@@ -54,7 +54,7 @@ gem 'ransack', '~> 4.1'
 
 group :production do
   # Use pg as the database for Active Record
-  gem 'pg', '~> 1.1'
+  gem 'pg', '~> 1.5'
 end
 
 group :development, :test do
