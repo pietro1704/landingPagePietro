@@ -32,6 +32,55 @@
         "branches": {
         }
       },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/about_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/about_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/home_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {
+        }
+      },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/posts_controller.rb": {
         "lines": [
           1,
@@ -116,55 +165,6 @@
           }
         }
       },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/about_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/home_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/helpers/posts_helper.rb": {
-        "lines": [
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/about_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ],
-        "branches": {
-        }
-      },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/home_controller.rb": {
         "lines": [
           1,
@@ -229,7 +229,7 @@
         }
       }
     },
-    "timestamp": 1722781663
+    "timestamp": 1722782024
   },
   "Unit Tests": {
     "coverage": {
