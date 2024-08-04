@@ -48,7 +48,7 @@ gem 'bootsnap', require: false
 gem 'image_processing'
 
 # Add Pagination
-gem 'pagy', '~> 8'
+gem 'pagy', '~> 9'
 
 gem 'ransack', '~> 4.2'
 
