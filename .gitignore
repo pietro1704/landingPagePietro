@@ -20,16 +20,15 @@ storage/
 
 # Secrets
 config/master.key
+config/master.key.bak
 
 # Public compiled assets
 public/assets/
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+# Node Modules
 node_modules/
 
-config/master.key
-
-*coverage/
-
-/config/master.key
+# coverage
+coverage/
