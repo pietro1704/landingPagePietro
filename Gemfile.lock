@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/puma/puma.git
-  revision: 366b6b5a5f51541457acc9d2a01178b2232c32f1
+  revision: 2c9aafef0ea42058bf3bb03f53805680fffecc60
   specs:
-    puma (6.4.3)
+    puma (6.5.0)
       nio4r (~> 2.0)
 
 GEM
