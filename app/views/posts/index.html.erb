@@ -1,14 +1,27 @@
-<p style="color: green"><%= notice %></p>
+<div class="container mt-5">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+  <h1 class="mb-4">Posts</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <div class="mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= post.title %></h5>
+            <div class="card-text">
+              <%= post.content %>
+            </div>
+            <%= link_to "Show this post", post, class: "btn btn-primary mt-3" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <% if admin_signed_in? %>
+    <div class="mt-4">
+      <%= link_to "New post", new_post_path, class: "btn btn-success" %>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New post", new_post_path %>

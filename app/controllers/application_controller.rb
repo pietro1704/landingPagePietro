@@ -1,2 +1,7 @@
 class ApplicationController < ActionController::Base
-end
+    helper_method :admin_signed_in?
+  
+    def admin_signed_in?
+      current_user && current_user.admin?
+    end
+  end

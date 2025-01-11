@@ -1,5 +1,7 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<div data-controller='hello'>
-  <button class='btn btn-primary', data-action="click->hello#greet">Greet</button>
+<div class="container mt-5">
+  <h1>Bem-vindo ao Meu Blog</h1>
+  <p>Este é o lugar onde compartilho meus pensamentos e ideias sobre diversos tópicos. Fique à vontade para explorar e ler os posts mais recentes.</p>
+  <div class="mt-4">
+    <%= link_to "Ver Posts", posts_path, class: "btn btn-primary" %>
+  </div>
 </div>
