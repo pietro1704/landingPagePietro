@@ -8,8 +8,7 @@
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/models/application_record.rb": {
         "lines": [
@@ -17,8 +16,7 @@
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/models/user.rb": {
         "lines": [
@@ -29,8 +27,7 @@
           null,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/controllers/posts_controller.rb": {
         "lines": [
@@ -121,40 +118,35 @@
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/helpers/about_helper.rb": {
         "lines": [
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/helpers/home_helper.rb": {
         "lines": [
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/helpers/posts_helper.rb": {
         "lines": [
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/controllers/about_controller.rb": {
         "lines": [
@@ -162,8 +154,7 @@
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/controllers/home_controller.rb": {
         "lines": [
@@ -171,8 +162,7 @@
           1,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/channels/application_cable/channel.rb": {
         "lines": [
@@ -183,8 +173,7 @@
           null,
           null
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/channels/application_cable/connection.rb": {
         "lines": [
@@ -193,8 +182,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/controllers/authentication_controller.rb": {
         "lines": [
@@ -202,8 +190,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/jobs/application_job.rb": {
         "lines": [
@@ -215,8 +202,7 @@
           null,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/home/pips/Developer/landingPagePietro/app/mailers/application_mailer.rb": {
         "lines": [
@@ -225,11 +211,10 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       }
     },
-    "timestamp": 1733000766
+    "timestamp": 1736607552
   },
   "Unit Tests": {
     "coverage": {
@@ -369,8 +354,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/channels/application_cable/connection.rb": {
         "lines": [
@@ -379,8 +363,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/about_controller.rb": {
         "lines": [
@@ -388,8 +371,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/authentication_controller.rb": {
         "lines": [
@@ -397,8 +379,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/controllers/home_controller.rb": {
         "lines": [
@@ -406,8 +387,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/jobs/application_job.rb": {
         "lines": [
@@ -419,8 +399,7 @@
           null,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       },
       "/Users/pietropugliesi/Developer/landingPagePietro/app/mailers/application_mailer.rb": {
         "lines": [
@@ -429,8 +408,7 @@
           0,
           0
         ],
-        "branches": {
-        }
+        "branches": {}
       }
     },
     "timestamp": 1693083642
