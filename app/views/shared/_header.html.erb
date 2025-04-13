@@ -9,6 +9,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto ">
+          <% unless user_signed_in? %>
+            <li><%= link_to "Login", new_user_session_path, class: 'nav-link' %></li>
+          <% end %>
           <li><%= link_to "Posts", posts_path, class: 'nav-link' %></li>
           <li><%= link_to "Sobre Mim", '/about#index', class: 'nav-link' %></li>
         </ul>
