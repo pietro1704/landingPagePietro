@@ -82,7 +82,7 @@ group :development do
   gem 'devise', '~> 4.9', require: false
   gem 'htmlbeautifier', '~> 1.4', require: false
   gem 'rack'
-  gem 'solargraph', '~> 0.50.0', require: false
+  # gem 'solargraph', '~> 0.50.0', require: false
 
   gem 'gem-ctags', require: false
 
