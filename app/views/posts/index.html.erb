@@ -19,7 +19,7 @@
     <% end %>
   </div>
 
-  <% if admin_signed_in? %>
+  <% if user_signed_in? %>
     <div class="mt-4">
       <%= link_to "New post", new_post_path, class: "btn btn-success" %>
     </div>
