@@ -44,6 +44,15 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :unprocessable_entity
   end
 
+  test 'should reject a non-hash post payload without creating a post' do
+    sign_in users(:one)
+    assert_no_difference('Post.count') do
+      post posts_url, params: { post: [{ title: 'Malformed payload' }] },
+                      env: { 'action_dispatch.show_exceptions' => :rescuable }
+    end
+    assert_response :bad_request
+  end
+
   test 'should show post' do
     get post_url(@post)
     assert_response :success

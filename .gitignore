@@ -32,3 +32,6 @@ node_modules/
 
 # coverage
 coverage/**
+
+# Generated Yarn installation state
+/.yarn/install-state.gz

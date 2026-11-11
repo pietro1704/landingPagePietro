@@ -24,16 +24,26 @@ jobs:
           POSTGRES_PASSWORD: password
     env:
       RAILS_ENV: test
+      SECRET_KEY_BASE_DUMMY: '1'
+      PARALLEL_WORKERS: '1'
       DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-      # Add or replace dependency steps here
+        uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '26.13.0'
+      - name: Install the pinned Yarn release
+        run: npm install --global @yarnpkg/cli-dist@4.18.1
+      - name: Install JavaScript dependencies
+        run: yarn install --immutable
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      # Add or replace database setup steps here
+      - name: Verify the selected Ruby pin
+        run: bundle exec ruby -e 'abort "Ruby pin mismatch" unless RUBY_VERSION == File.read(".tool-versions").split.last'
       - name: Set up database schema
         run: bin/rails db:schema:load
       # Precompile assets
@@ -47,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
