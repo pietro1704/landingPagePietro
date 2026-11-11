@@ -27,8 +27,8 @@ class PostsController < ApplicationController
         format.html { redirect_to post_url(@post), notice: t('post.created') }
         format.json { render :show, status: :created, location: @post }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html { render :new, status: :unprocessable_content }
+        format.json { render json: @post.errors, status: :unprocessable_content }
       end
     end
   end
@@ -40,8 +40,8 @@ class PostsController < ApplicationController
         format.html { redirect_to post_url(@post), notice: t('post.updated') }
         format.json { render :show, status: :ok, location: @post }
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html { render :edit, status: :unprocessable_content }
+        format.json { render json: @post.errors, status: :unprocessable_content }
       end
     end
   end
@@ -60,11 +60,11 @@ class PostsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_post
-    @post = Post.find(params[:id])
+    @post = Post.find(params.expect(:id))
   end
 
   # Only allow a list of trusted parameters through.
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.expect(post: %i[title content])
   end
 end

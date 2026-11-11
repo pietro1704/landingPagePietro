@@ -3,10 +3,13 @@ source 'https://rubygems.org'
 # Github gem source (latest)
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '~> 3.3'
+ruby file: '.tool-versions'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 8.0'
+
+# Authentication is required by the application in every environment.
+gem 'devise', '~> 5.0', require: false
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem 'propshaft'
@@ -39,7 +42,7 @@ gem 'jbuilder'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data', platforms: %i[windows jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -59,7 +62,7 @@ end
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'debug', platforms: %i[mri windows]
 
   gem 'sqlite3', '~> 2.5'
 
@@ -79,7 +82,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'devise', '~> 4.9', require: false
   gem 'htmlbeautifier', '~> 1.4', require: false
   gem 'rack'
   # gem 'solargraph', '~> 0.50.0', require: false
@@ -100,7 +102,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'webdrivers'
 
   gem 'simplecov', '~> 0.22.0', require: false
 end
